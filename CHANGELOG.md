@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2026-09-21
+
+### Changed
+
+- Changed the Thunderstore package name to `No_Void_Fiend_Drone_Healing`.
+
+
 ## [1.0.2] - 2026-09-20
 
 ### Fixed

@@ -1,4 +1,4 @@
-# No Void Fiend Healing Drone Target
+# No Void Fiend Drone Healing
 
 A small Risk of Rain 2 BepInEx mod that prevents healing drones from selecting Void Fiend as a healing target.
 

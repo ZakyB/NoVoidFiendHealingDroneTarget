@@ -1,6 +1,6 @@
 {
-  "name": "NoVoidFiendHealingDroneTarget",
-  "version_number": "1.0.2",
+  "name": "No_Void_Fiend_Drone_Healing",
+  "version_number": "1.0.3",
   "website_url": "https://github.com/ZakyB/NoVoidFiendHealingDroneTarget",
   "description": "Prevents Healing Drones, Emergency Drones, and DOC from targeting Void Fiend.",
   "dependencies": [

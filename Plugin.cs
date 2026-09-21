@@ -20,8 +20,8 @@ namespace NoVoidFiendHealingDroneTarget;
 public sealed class Plugin : BaseUnityPlugin
 {
     public const string PluginGuid = "com.zaky.novoidfiendhealingdronetarget";
-    public const string PluginName = "No Void Fiend Healing Drone Target";
-    public const string PluginVersion = "1.0.2";
+    public const string PluginName = "No Void Fiend Drone Healing";
+    public const string PluginVersion = "1.0.3";
 
     private void Awake()
     {
