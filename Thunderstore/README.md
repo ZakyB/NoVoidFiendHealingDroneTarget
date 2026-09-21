@@ -37,17 +37,6 @@ bin/Debug/netstandard2.1/NoVoidFiendHealingDroneTarget.dll
 
 After every successful build, the project also refreshes the local Thunderstore package files under `Thunderstore/`, including the DLL in `Thunderstore/plugins/`.
 
-## Testing
-
-1. Create a clean Risk of Rain 2 profile in r2modman or the Thunderstore app.
-2. Install BepInExPack, HookGenPatcher, and this local package.
-3. Test Healing Drone, Emergency Drone, and DOC with an injured Void Fiend.
-4. Confirm that none of them selects Void Fiend.
-5. Add an injured non-Void-Fiend ally and confirm that the drones still heal it.
-6. For Emergency Drone, confirm that every additional beam also ignores Void
-   Fiend.
-7. Repeat with another player owning the drone.
-
 If the BepInEx log contains `Could not patch BaseAI.FindEnemyHurtBox`, a game update probably changed that method and the IL hook must be reviewed.
 
 ## How it works
