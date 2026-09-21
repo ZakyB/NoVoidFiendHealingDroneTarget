@@ -1,0 +1,10 @@
+{
+  "name": "NoVoidFiendHealingDroneTarget",
+  "version_number": "1.0.2",
+  "website_url": "https://github.com/ZakyB/NoVoidFiendHealingDroneTarget",
+  "description": "Prevents Healing Drones, Emergency Drones, and DOC from targeting Void Fiend.",
+  "dependencies": [
+    "bbepis-BepInExPack-5.4.2122",
+    "RiskofThunder-HookGenPatcher-1.2.9"
+  ]
+}

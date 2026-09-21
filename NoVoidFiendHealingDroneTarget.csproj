@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>NoVoidFiendHealingDroneTarget</AssemblyName>
+    <RootNamespace>NoVoidFiendHealingDroneTarget</RootNamespace>
+    <Version>1.0.2</Version>
+    <Authors>ZakyB</Authors>
+    <Description>Prevents Healing Drones, Emergency Drones, and DOC from targeting Void Fiend.</Description>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.0.*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="BepInEx.Core" Version="5.4.21" />
+    <PackageReference Include="UnityEngine.Modules" Version="2021.3.33" IncludeAssets="compile" />
+    <PackageReference Include="RiskOfRain2.GameLibs" Version="1.4.1-r.0" />
+    <PackageReference Include="MMHOOK.RoR2" Version="2025.12.9" NoWarn="NU1701" />
+  </ItemGroup>
+
+  <Target Name="PrepareThunderstorePackage" AfterTargets="Build">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\Thunderstore\plugins" />
+    <Copy
+      SourceFiles="$(TargetPath)"
+      DestinationFolder="$(MSBuildProjectDirectory)\Thunderstore\plugins"
+      SkipUnchangedFiles="true" />
+    <Copy
+      SourceFiles="$(MSBuildProjectDirectory)\README.md;$(MSBuildProjectDirectory)\CHANGELOG.md"
+      DestinationFolder="$(MSBuildProjectDirectory)\Thunderstore"
+      SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>
